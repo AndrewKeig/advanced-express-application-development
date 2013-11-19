@@ -1,0 +1,84 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+@media (max-width: 980px) {
+  /* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.nav-list, .media-list {
+ width:100%;
+ max-height:600px;
+ overflow: auto;
+ overflow-x:hidden;
+}
+
+li {
+  width: 100%;
+
+}
+
+.nav-list a {
+min-height:40px;
+width: 100%;
+margin-bottom:10px;
+
+}
+
+.list-btn {
+float:right;
+margin-top:-46px;
+}
+
+.form-inline {
+  min-height:90px;
+}
+
+#showForm{
+  margin-left:20px;
+}
+
+.form-btn {
+float:right;
+margin-top:6px;
+margin-left:6px;
+}
+
+input {
+  width:280px;
+  margin-top: 10px;
+}
+
+.disabled {
+  pointer-events: none; 
+}
+
+.span3 {
+  margin-top:40px;
+  padding-right:40px;
+}
+
+.hero-unit {
+  margin-top:40px;
+}
+
+#login img {
+ margin-top:10px; 
+}
+
+
+.row-fluid:first-child{
+  width:20%;
+}
+
+.spacer {  margin-right : 50px; }
+.form-spacer {  margin-right : 2px; }

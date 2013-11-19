@@ -1,0 +1,12 @@
+{
+  "name": "vision",
+  "version": "0.0.1",
+  "dependencies": {
+    "json2": "*",
+    "jquery": "*",
+    "underscore": "*",
+    "backbone": "*",
+    "handlebars": "*",
+    "bootstrap": "2.3.2"
+  }
+}

@@ -1,0 +1,1 @@
+alias rvm-restart='rvm_reload_flag=1 source '\''/Users/andrewkeig/.rvm/scripts/rvm'\'''

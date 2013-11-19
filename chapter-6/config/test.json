@@ -1,0 +1,32 @@
+{
+  "express": {
+    "port": 3000
+  },
+  "logger" : {
+    "filename": "logs/run.log",
+    "level": "silly"
+  },
+  "mongo": {
+    "url":  "mongodb://localhost/vision"
+  },
+  "redis": {
+    "port": 6379
+  , "host": "localhost"
+  },
+  "sockets": {
+    "loglevel": 1
+  , "pollingduration": 10
+  , "browserclientminification" : false
+  , "browserclientetag" : false
+  , "browserclientgzip" : false
+  },
+  "auth": {
+    "callback": "http://127.0.0.1:3000/auth/github/callback"
+  , "clientId": "5bb691b4ebb5417f4ab9"
+  , "clientSecret": "15310740929666983d52808dda32417d733791d0"
+  },
+  "session": {
+    "secret": "th1$1$a$ecret"
+  , "maxAge": 60000
+  }
+}

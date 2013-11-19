@@ -1,0 +1,23 @@
+{
+  "express": {
+    "port": 3000
+  },
+  "logger" : {
+    "filename": "logs/run.log",
+    "level": "silly"
+  },
+  "mongo": {
+    "url":  "mongodb://localhost/vision"
+  },
+  "redis": {
+    "port": 6379
+  , "host": "localhost"
+  },
+  "sockets": {
+    "loglevel": 3
+  , "pollingduration": 10
+  , "browserclientminification" : false
+  , "browserclientetag" : false
+  , "browserclientgzip" : false
+  }
+}

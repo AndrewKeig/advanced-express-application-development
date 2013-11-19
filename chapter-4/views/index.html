@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}">
+    <meta name="author" content="{{author}}">
+    <link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="/vision/vision.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <a class="brand" href="#"><h2>vision</h2></a>
+            <div class="nav-collapse collapse pull-right">
+              {{#if user}}
+              <p class="navbar-text">
+                welcome {{user}}, <a href="/logout" class="navbar-link">click here to sign out</a> 
+              </p>
+              {{else}}
+                <a href="/auth/github"><img src="/vision/github.png" id='login'></a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+        {{#if user}}
+        <div class="span3">
+          <h2>Projects</h2>
+          <ul id="projects-list"  class="nav nav-list"></ul>
+          <br/><a id="showForm" class="btn btn-large btn-block btn-primary" href="#add">Add project</a>
+        </div>
+        <div class="span3">
+          <h2>Repositories</h2>
+           <ul id="repository-list" class="nav inline nav-list"></ul>
+        </div>
+        <div class="span3">
+          <h2>Commits</h2>
+          <ul id="commits-list" class="media-list"></ul>
+        </div>
+        <div class="span3">
+          <h2>Issues</h2>
+          <ul id="issues-list" class="media-list"></ul>
+        </div>
+        {{else}}   
+        <div class="span12">
+          <div class="hero-unit">
+            <h1>vision</h1>
+            <lead>a real-time multiple repository dashboard for GitHub issues and commits</lead>
+            <p><small>In order to use vision; please login to a valid GitHub Account</small></p>
+          </div>
+        </div>
+        {{/if}}
+    </div>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/json2/json2.js"></script>
+    <script src="/underscore/underscore-min.js"></script>
+    <script src="/backbone/backbone-min.js"></script>
+    <script src="/handlebars/handlebars.runtime.js"></script>
+    <script src="/sockets/socket.io.js"></script>
+    <script src="/vision/templates.js"></script>
+    {{#if user}}
+    <script src="/vision/vision.js"></script>
+    {{/if}}
+  </body>
+</html>

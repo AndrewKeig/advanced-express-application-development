@@ -1,0 +1,9 @@
+{
+  "express": {
+    "port": 3000
+  },
+  "logger" : {
+    "filename": "logs/run.log",
+    "level": "silly"
+  }
+}
