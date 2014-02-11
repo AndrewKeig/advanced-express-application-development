@@ -28,7 +28,7 @@ describe('vision github api', function(){
 
   describe('when requesting an available resource /project/:id/repos', function(){
     it('should respond with 200', function(done){
-      this.timeout(5000);
+      this.timeout(7000);
       request(app)
         .get('/project/' + id + '/repos/')
         .expect('Content-Type', /json/)
@@ -63,7 +63,7 @@ describe('vision github api', function(){
 
   describe('when requesting an available resource /project/:id/commits', function(){
     it('should respond with 200', function(done){
-      this.timeout(5000);
+      this.timeout(7000);
       request(app)
         .get('/project/' + id + '/commits')
         .expect('Content-Type', /json/)
