@@ -1,8 +1,21 @@
 {
   "name": "advanced-express-web-application-development",
+  "description": "This repository contains examples created as part of my book published by Packt Publishing; Advanced Express Web Application Development.",
   "version": "0.0.1",
-  "dependencies": {
+  "homepage": "https://github.com/AndrewKeig/advanced-express-application-development",
+  "author": {
+    "name": "Andrew Keig",
+    "email": "andrew.keig@gmail.com"
   },
-  "devDependencies": {
-  }
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrewkeig/advanced-express-application-development.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndrewKeig/advanced-express-application-development/issues"
+  },
+  "keywords": [
+    "express",
+    "boilerplate"
+  ]
 }
