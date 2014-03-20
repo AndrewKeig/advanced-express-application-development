@@ -1,6 +1,6 @@
 {
-  "name": "advanced-express-web-application-development",
-  "description": "This repository contains examples created as part of my book published by Packt Publishing; Advanced Express Web Application Development.",
+  "name": "advanced-express-application-development",
+  "description": "This module contains the source code for Advanced Express Web Application Development.",
   "version": "0.0.1",
   "homepage": "https://github.com/AndrewKeig/advanced-express-application-development",
   "author": {
