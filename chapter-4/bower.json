@@ -5,9 +5,9 @@
     "json2": "*",
     "jquery": "*",
     "underscore": "*",
-    "backbone": "*",
-    "handlebars": "*",
+    "backbone": "1.0.0",
+    "handlebars": "1.3.0",
     "bootstrap": "2.3.2",
-    "socket.io-client": "*"
+    "socket.io-client": "0.9.17"
   }
 }
